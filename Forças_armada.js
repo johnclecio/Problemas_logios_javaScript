@@ -1,11 +1,21 @@
-alert("Bem vindo as Forças Armadas");
-nome = prompt("Qual o seu nome?  ");
+function MinhaIdade(){
+    let nome = document.getElementById("nome").value;
+    let idade = parseFloat(document.getElementById("idade").value);
 
-alert("Olá "   + nome + " vamos verificar se você estar apto ao Serviço Militar");
-idade = prompt("Qual sua Idade? ");
+  // Define a message to display
+    let message = " ";
+    if (idade >=18){
+        message = "Você está apto ao Serviço Militar";
+    } else {
+        message = "Você não está apto ao Serviço militar, tente novamente.";
+    }
 
-if (idade >=18){
-    alert("Você está apto ao Serviço Militar");
-}else {
-    alert("Você não estar apto ao Serviço milita, tente novamente.");
+    // Exibe o resultado da conversão
+    var resultado = document.getElementById('resultado1');
+    resultado.innerHTML = 'Nome: ' + nome + '<br>Idade: ' + idade + '<br>' + message;
+    resultado.style.display = 'block';
 }
+
+
+
+

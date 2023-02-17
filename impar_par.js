@@ -1,10 +1,8 @@
-
-const vetor = Array(2)
-for(let i = 1; i <= 2; i++){
-  vetor[i] = Number(prompt(`Digite o valor:  ${i}: `))
-
+function NumparImpar() {
+  const num1 = Number(document.getElementById("num1").value);
+  const num2 = Number(document.getElementById("num2").value);
+  const n1 = num1 % 2 === 0 ? 'par' : 'ímpar';
+  const n2 = num2 % 2 === 0 ? 'par' : 'ímpar';
+  const output = document.getElementById("output");
+  output.innerHTML = `Número ${num1} é ${n1}<br>Número ${num2} é ${n2}`;
 }
- let resultado = vetor[1]  % 2 ===0? 'par':'impar'; 
- let resultado1 = vetor[2] % 2 ===0? 'par':'impar'; 
-    alert(`número ${vetor[1]} é ${resultado} `)
-    alert(`número ${vetor[2]} é ${resultado1} `)

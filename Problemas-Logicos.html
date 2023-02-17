@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Problemas Logicos</title>
+</head>
+<body>
+
+  <section class="s1">
+    <h1>Converte Moedas</h1>
+
+    <form>
+      <label>Valor em Real:</label>
+      <input type="text" id="valorA">
+      <button type="button" onclick="converter('real', 'dolar')">Converter para Dólar</button>
+    
+      <label>Valor em Dólar:</label>
+      <input type="text" id="valorB">
+      <button type="button" onclick="converter('dolar', 'real')">Converter para Real</button>
+    </form>
+    
+    <!-- Adicione uma div para exibir o resultado da conversão -->
+    <div id="resultado" style="display: none;"></div>
+  
+  
+    <script src="converte_moedas.js"></script>
+  </section>
+  
+
+
+  <section class="s2">
+    <h1>Forças Armadas!</h1>
+    <p>Faça Parte da nossa Força </p>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome">
+
+    <label for="idade">Sua Idade?</label>
+    <input type="number" id="idade">
+   
+    <button  onclick="MinhaIdade()">Confirmar</button>
+    <br>
+    <br>
+    <div id="resultado1" style="display: none;"></div>
+
+    <script src="Forças_armada.js"></script>
+  </section>
+
+
+  <section class="s3">
+    <h1>Impar ou Par</h1>
+    
+  <label for="num1">Digite o valor 1:</label>
+	<input type="number" id="num1">
+
+	<label for="num2">Digite o valor 2:</label>
+	<input type="number" id="num2">
+
+	<button onclick="NumparImpar()">Verificar</button><br>
+	<p id="output"></p>
+    <script src="impar_par.js"></script>
+  </section>
+ 
+</body>
+</html>
