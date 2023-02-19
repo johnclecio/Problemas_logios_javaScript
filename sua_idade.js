@@ -1,6 +1,6 @@
-let idade;
-
-idade = prompt("Digite seu ano de Nascimento:   ");
-
-let ano = 2022 - idade;
-alert("Sua idade é: " + ano);
+function Ano() {
+  let idade = parseFloat(document.getElementById("ano").value);
+  let ano = 2023 - idade;
+  let resultado = document.getElementById('resultado3');
+  resultado.innerHTML = 'Sua idade é: ' + ano;
+}

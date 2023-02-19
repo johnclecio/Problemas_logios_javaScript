@@ -1,12 +1,8 @@
-let l
-let a
+function TotaldaArea() {
+  let l = parseFloat(document.getElementById("l").value);
+  let a = parseFloat(document.getElementById("a").value);
 
+  let area = l * a;
 
-l = prompt("Digite a sua  Lagura: ");
-l = eval (l);
-a = prompt("Digite a sua Altura: ");
-a = eval (a);
-
-let area = (l*a);
-
-alert("Area Total: " + area);
+  document.getElementById("resultado4").innerHTML = "Área Total: " + area;
+}

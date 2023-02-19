@@ -1,19 +1,18 @@
+function Media() {
+  let nota1 = parseFloat(document.getElementById("nota1").value);
+  let nota2 = parseFloat(document.getElementById("nota2").value);
 
-let nota1
-let nota2
+  let media = (nota1 + nota2) / 2;
 
-
-
-nota1 = prompt("Digite sua primeira nota: ");
-nota1= eval (nota1);
-nota2 = prompt("Digite sua segunda nota:  ");
-nota2= eval (nota2);
-
-let media = (nota1 + nota2)/2;
-
-if(media >= 7){
-   alert(" Voce está Aprovado");
-}else {
-  alert("Voce está  Reprovado");
+  if (media >= 7) {
+    document.getElementById("resultado5").innerHTML = "Sua Média é : " + media + "<br> Você está Aprovado.";
+  } else {
+    document.getElementById("resultado5").innerHTML = "Sua Média é : " + media + "<br> Você está Reprovado.";
+  }
 }
+
+
+
+
+
 

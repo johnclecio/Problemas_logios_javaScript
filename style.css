@@ -1,4 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
 body {
   background-color: #143F6B;
   color: #FEFCF3;
+}
+
+section {
+  border-bottom: #000000 solid 2px;
+  height: 100px;
+  padding: 50px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-block: 50px;
+}
+h2 {
+  margin-block: 20px;
+}
+p {
+  margin-block: 20px;
 }
