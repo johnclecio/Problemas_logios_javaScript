@@ -4,5 +4,6 @@ git commit -m "descrição"
 git branch -M main
 git remote add origin "URL do repositorio"
 git push -u origin main
+git push --force origin main
 
-https://github.com/johnclecio/Page_Login.git
+https://github.com/johnclecio/Problemas_logios_javaScript.git
